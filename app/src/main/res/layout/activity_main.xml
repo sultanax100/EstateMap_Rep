@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Logo and Get Started Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="50dp"
+        android:layout_marginBottom="30dp"> <!-- Margin to give space above the bottom edge -->
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logo" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/button_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#232D51"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Get Started"
+            android:textColor="#FFFFFF"
+            android:onClick="onGetStarted"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <!-- Image Collage -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:rotation="15">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/house2" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/house1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/house3" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/house4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

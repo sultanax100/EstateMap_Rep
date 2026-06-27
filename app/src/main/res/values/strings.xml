@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EstateMap</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="search_resaults">Search the house</string>
+    <string-array name="filter_options">
+        <item>For Sale</item>
+        <item>For Rent</item>
+        <item>Low to High</item>
+        <item>High to Low</item>
+    </string-array>
+    >
+    <!--    <string-array name="filter_options2">-->
+    <!--        <item>Low-High Price</item>-->
+    <!--        <item>High-Low Price</item>-->
+    <!--    </string-array>-->
+
+    <string-array name="location_array">
+        <item>Saudi Arabia, Jeddah</item>
+        <item>Saudi Arabia, Riyadh</item>
+        <item>Saudi Arabia, Dammam</item>
+        <item>Saudi Arabia, Makkah</item>
+        <item>Saudi Arabia, Madinah</item>
+        <item>Saudi Arabia, Taif</item>
+        <item>Saudi Arabia, Abha</item>
+        <item>Saudi Arabia, Tabuk</item>
+        <item>Saudi Arabia, Khobar</item>
+        <item>Saudi Arabia, Jubail</item>
+    </string-array>
+</resources>

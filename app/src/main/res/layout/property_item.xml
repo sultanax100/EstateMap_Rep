@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/propertyItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".HomePage">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:background="@android:color/white">
+
+      <!-- Property Image -->
+      <ImageView
+          android:id="@+id/propertyImage"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:scaleType="centerCrop"
+          android:contentDescription="Property Image"/>
+
+      <!-- Property Price -->
+      <TextView
+          android:id="@+id/propertyPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0 SAR"
+          android:textSize="27sp"
+          android:fontFamily="@font/poppins_semibold"
+          android:layout_marginTop="8dp"/>
+
+      <!-- Property Rate -->
+      <TextView
+          android:id="@+id/propertyRate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Rate: 4.5"
+          android:textSize="20sp"
+          android:fontFamily="@font/poppins_light"
+          android:layout_marginTop="4dp"/>
+
+      <!-- Property Location -->
+      <TextView
+          android:id="@+id/propertyLocation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Location: Unknown"
+          android:textSize="20sp"
+          android:fontFamily="@font/poppins_light"
+          android:layout_marginTop="4dp"/>
+
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

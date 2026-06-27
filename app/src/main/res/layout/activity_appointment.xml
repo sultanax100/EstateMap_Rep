@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Bar with Back Button and Cancel Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Cancel Button -->
+        <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the day and time:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tabs for Gregorian and Hijri -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Gregorian Tab -->
+        <TextView
+            android:id="@+id/gregorianTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Gregorian"
+            android:background="@drawable/selected_tab_background"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <!-- Hijri Tab -->
+        <TextView
+            android:id="@+id/hijriTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Hijri"
+            android:background="@drawable/unselected_tab_background"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Calendar Container -->
+    <FrameLayout
+        android:id="@+id/calendarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Default Gregorian Calendar -->
+        <CalendarView
+            android:id="@+id/gregorianCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Hijri Months List (Hidden by Default) -->
+        <GridView
+            android:id="@+id/hijriCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone"
+            android:verticalSpacing="8dp"
+            android:horizontalSpacing="8dp"
+            android:padding="16dp"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <!-- Show Less Button -->
+    <TextView
+        android:id="@+id/showLessButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Less"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="end" />
+
+
+
+
+</LinearLayout>

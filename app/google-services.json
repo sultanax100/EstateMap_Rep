@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "1096659677213",
+    "firebase_url": "https://estatemap-57e91-default-rtdb.firebaseio.com",
+    "project_id": "estatemap-57e91",
+    "storage_bucket": "estatemap-57e91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096659677213:android:5ac0e4871a9bf9703ad6f4",
+        "android_client_info": {
+          "package_name": "com.example.estatemap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt16yB9X8SoByAgAUN-ca0sZtbjkU21Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096659677213:android:1b65eae22aa355743ad6f4",
+        "android_client_info": {
+          "package_name": "com.example.realestate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt16yB9X8SoByAgAUN-ca0sZtbjkU21Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Images -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/left_logo"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ejar" />
+
+            <ImageView
+                android:id="@+id/right_logo"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/unifiedcc" />
+        </LinearLayout>
+
+        <!-- Terms and Conditions Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#232D51"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Terms and Conditions"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Terms and Conditions Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="1. Use of Property:\nThe property is to be used for residential purposes only.\n\n2. Utilities:\nThe tenant agrees to pay for the utilities and other services used in the property during the lease period.\n\n3. Furnishings:\nThe leased building includes the following furnishings: refrigerator, washing machine, oven, gas, microwave.\n\n4. Acknowledgment:\nBy proceeding, you agree to fulfill the agreed terms." />
+
+        <!-- Agree Checkbox -->
+        <CheckBox
+            android:id="@+id/checkbox_agree_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="I agree to the Terms and Conditions"
+            android:textSize="14sp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Next"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:enabled="false" />
+    </LinearLayout>
+</ScrollView>

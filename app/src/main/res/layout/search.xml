@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSearchPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search for property"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/preferance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fillter results"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter property name"
+        android:inputType="number"
+        android:layout_below="@id/tvSearchPrompt"
+        android:layout_marginTop="20dp"
+        android:padding="17dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@+id/searchEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:padding="2dp"
+        android:textColor="#FCF6FD"
+        android:backgroundTint="#2D3E72"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Dropdown for filtering by price/type -->
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="200dp"
+        android:entries="@array/filter_options" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/propertyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:padding="30dp"/>
+</RelativeLayout>
