@@ -12,9 +12,7 @@
 EstateMap is an interactive Android application that provides advanced search capabilities for real estate properties and efficient management of client appointments. The app is tailored to enhance the user experience by delivering a seamless, native mobile interface.
 
 ## 🛠️ Tech Stack
-![Java](https://img.shields.io/badge/Java-121212?style=flat-square&logo=openjdk&logoColor=ED8B00)
-![Android Studio](https://img.shields.io/badge/Android_Studio-121212?style=flat-square&logo=androidstudio&logoColor=3DDC84)
-![Gradle](https://img.shields.io/badge/Gradle-121212?style=flat-square&logo=gradle&logoColor=02303A)
+![Java](https://img.shields.io/badge/Java-121212?style=flat-square&logo=openjdk&logoColor=ED8B00) ![Android Studio](https://img.shields.io/badge/Android_Studio-121212?style=flat-square&logo=androidstudio&logoColor=3DDC84) ![Firebase](https://img.shields.io/badge/Firebase-121212?style=flat-square&logo=firebase&logoColor=FFCA28) ![Google Maps API](https://img.shields.io/badge/Google_Maps-121212?style=flat-square&logo=googlemaps&logoColor=4285F4)
 ![XML](https://img.shields.io/badge/XML-121212?style=flat-square&logo=xml&logoColor=FF6600)
 
 ## 💻 My Role 
@@ -22,9 +20,9 @@ EstateMap is an interactive Android application that provides advanced search ca
 
 > *Note: This project was a highly collaborative team effort. While we worked together across all development phases*
 
-* **Systems Analysis:** Collaborated closely with the team to map out the application's core architecture, taking responsibility for structuring the appointment scheduling flow and advanced search logic.
-* **UI/UX & Frontend Integration:** Co-designed and integrated clean, user-friendly XML layouts, working alongside my teammates to ensure a seamless native Android experience.
-* **Backend Logic:** Partnered with the development team to implement robust Java algorithms for handling search queries, data filtering, and state management effectively.
+* **Systems Analysis & Architecture:** Mapped out the application's core logic, specifically designing the sequence diagrams for user authentication and the appointment booking flows.
+* **Contract Management Module:** Led the frontend and backend development of the Contract Page, ensuring secure data entry and validation.
+* **Agile Leadership:** Served as the Scrum Master during the initial development sprint to organize task allocation and establish team workflows.
 
 ## 🚀 Getting Started
 To explore or run this project locally, follow these steps:
